@@ -1,6 +1,12 @@
 const inputBox = document.getElementById('inputbox');
 const listContainer = document.getElementById('list_container');
 
+document.addEventListener('keyup',(e)=>{
+    if(e.key == "Enter"){
+        addTask();
+    }
+});
+
 function addTask(){
     if(inputBox.value === ''){
         alert("Write Something");
